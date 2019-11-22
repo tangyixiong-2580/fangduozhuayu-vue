@@ -1,0 +1,634 @@
+<template>
+  <div class="sellingbooks">
+    <el-dialog :visible.sync="ManualInput" title="手动输入条码号" center class="input-wrapper">
+      <div class="modal-desc">
+        <div class="desc-context">
+          <div class="context-center">
+            <span>13 或 10 位 ISBN 条码，不含 - 符号</span>
+            <span>或多抓鱼的 dzy 开头的条码</span>
+          </div>
+          <div style="text-align:center">
+            <svg width="152px" height="83px" viewBox="0 0 279 150" version="1.1">
+              <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="Group-2">
+                  <rect id="Rectangle-20" fill="#FDEDAE" x="0" y="133" width="279" height="17" />
+                  <text
+                    id="9-781449-063665"
+                    font-family="HelveticaNeue-Light, Helvetica Neue"
+                    font-size="22"
+                    font-weight="300"
+                    letter-spacing="5.86000013"
+                    fill="#333333"
+                  >
+                    <tspan x="1" y="149">9 781449 06366</tspan>
+                    <tspan x="242.056002" y="149">5</tspan>
+                  </text>
+                  <g
+                    id="Group-13"
+                    transform="translate(19.000000, 0.000000)"
+                    fill-rule="nonzero"
+                    fill="#000000"
+                  >
+                    <rect
+                      id="Rectangle-path"
+                      x="4.67484663"
+                      y="0"
+                      width="1.9751714"
+                      height="136.009995"
+                    />
+                    <rect id="Rectangle-path" x="0" y="0" width="1.9751714" height="136.009995" />
+                    <rect
+                      id="Rectangle-path"
+                      x="121.546012"
+                      y="0"
+                      width="1.9751714"
+                      height="136.009995"
+                    />
+                    <rect id="Rectangle-path" x="126" y="0" width="1.9751714" height="136.009995" />
+                    <rect
+                      id="Rectangle-path-Copy"
+                      x="240"
+                      y="0"
+                      width="1.9751714"
+                      height="136.009995"
+                    />
+                    <rect
+                      id="Rectangle-path-Copy"
+                      x="244"
+                      y="0"
+                      width="1.9751714"
+                      height="136.009995"
+                    />
+                    <rect
+                      id="Rectangle-path"
+                      x="12.4662577"
+                      y="0"
+                      width="10.5006794"
+                      height="124.362559"
+                    />
+                    <rect
+                      id="Rectangle-path"
+                      x="59.2147239"
+                      y="0"
+                      width="12.4346538"
+                      height="124.362559"
+                    />
+                    <rect
+                      id="Rectangle-path"
+                      x="109.079755"
+                      y="0"
+                      width="6.21847124"
+                      height="124.362559"
+                    />
+                    <rect
+                      id="Rectangle-path"
+                      x="29.607362"
+                      y="0"
+                      width="2.5519306"
+                      height="124.362559"
+                    />
+                    <rect
+                      id="Rectangle-path"
+                      x="49.8650307"
+                      y="0"
+                      width="2.5519306"
+                      height="124.362559"
+                    />
+                    <rect
+                      id="Rectangle-path"
+                      x="85.7055215"
+                      y="0"
+                      width="2.5519306"
+                      height="124.362559"
+                    />
+                    <rect
+                      id="Rectangle-path"
+                      x="77.9141104"
+                      y="0"
+                      width="2.55650805"
+                      height="124.362559"
+                    />
+                    <rect
+                      id="Rectangle-path"
+                      x="38.9570552"
+                      y="0"
+                      width="4.78801687"
+                      height="124.362559"
+                    />
+                    <rect
+                      id="Rectangle-path"
+                      x="98.1717791"
+                      y="0"
+                      width="4.78801687"
+                      height="124.362559"
+                    />
+                    <rect
+                      id="Rectangle-path"
+                      x="134.01227"
+                      y="0"
+                      width="10.5006794"
+                      height="124.362559"
+                    />
+                    <rect
+                      id="Rectangle-path"
+                      x="180.760736"
+                      y="0"
+                      width="12.4346538"
+                      height="124.362559"
+                    />
+                    <rect
+                      id="Rectangle-path"
+                      x="230.625767"
+                      y="0"
+                      width="6.21847124"
+                      height="124.362559"
+                    />
+                    <rect
+                      id="Rectangle-path"
+                      x="151.153374"
+                      y="0"
+                      width="2.5519306"
+                      height="124.362559"
+                    />
+                    <rect
+                      id="Rectangle-path"
+                      x="171.411043"
+                      y="0"
+                      width="2.5519306"
+                      height="124.362559"
+                    />
+                    <rect
+                      id="Rectangle-path"
+                      x="207.251534"
+                      y="0"
+                      width="2.5519306"
+                      height="124.362559"
+                    />
+                    <rect
+                      id="Rectangle-path"
+                      x="199.460123"
+                      y="0"
+                      width="2.55650805"
+                      height="124.362559"
+                    />
+                    <rect
+                      id="Rectangle-path"
+                      x="160.503067"
+                      y="0"
+                      width="4.78801687"
+                      height="124.362559"
+                    />
+                    <rect
+                      id="Rectangle-path"
+                      x="219.717791"
+                      y="0"
+                      width="4.78801687"
+                      height="124.362559"
+                    />
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </div>
+          <div class="input-wrapper">
+            <input class="input-isbn" placeholder="在这输入..." v-model="isbn" />
+          </div>
+          <div
+            class="inputfales"
+            style="display:none"
+          >格式错误，ISBN 最后一位可以是字母 X。多抓鱼条码以 dzy 开头 13 位，请重新输入</div>
+        </div>
+      </div>
+      <span slot="footer" style="padding:0px">
+        <button type="primary" @click="commitIsbn" class="commitIsbn">确认</button>
+      </span>
+    </el-dialog>
+
+    <el-dialog
+      title="拒书规则更新"
+      :visible.sync="showUnreceiveRules"
+      width="85%"
+      center
+      :show-close="false"
+    >
+      <span>新增了书籍拒收的类型：</span>
+      <ul>
+        <li>
+          <div class="content">
+            <div class="point"></div>
+            <span>馆藏类印章或标签会拒收</span>
+          </div>
+        </li>
+        <li>
+          <div class="content">
+            <div class="point"></div>
+            <span>被写过的习题册会拒收</span>
+          </div>
+        </li>
+      </ul>
+      <router-link class="rule" to="/support/condition" style="text-decoration: none">
+        查看更多审核规则
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          xmlns="http://www.w3.org/2000/svg"
+          class="Icon"
+        >
+          <polyline points="9 18 15 12 9 6" />
+        </svg>
+      </router-link>
+      <span slot="footer" style="padding:0px">
+        <div class="check" @click="showUnreceiveRules = false">好的</div>
+      </span>
+    </el-dialog>
+
+    <el-dialog
+      title="扫码登录"
+      :visible.sync="showLogin"
+      :close-on-click-modal="false"
+      width="90%"
+      center
+      :show-close="false"
+      class="login-wrapper"
+    >
+      <!-- <img
+        style="-webkit-user-select: none;"
+        src="http://apis.juhe.cn/qrcode/api?text=http://apis.juhe.cn/qrcode/api?text=https%3A%2F%2Fopen.weixin.qq.com%2Fconnect%2Foauth2%2Fauthorize%3Fappid%3Dwxc3758a49f9d0e965%26redirect_uri%3Dhttp%3A%2F%2F192.168.6.24%3A9090%2Fdzy%2Fuser%2Flogin%2FnewUser%26response_type%3Dcode%26scope%3Dsnsapi_userinfo%23wechat_redirect&el=&bgcolor=&fgcolor=&logo=&w=215&m=&lw=&type=2&key=980f3a792e72d63ecfa2328aaa65d927"
+      />-->
+      <!-- <img src="../../assets/imgas/users/login.png" height="215px" width="215px" /> -->
+      <qrcode-vue :value="qrcodeValue" level="H"></qrcode-vue>
+      <span slot="footer" style="padding:0px" class="login-footer">
+        <span>用微信扫描二维码即可登录</span>
+        <br />
+        <span @click="cancelLogin()">取消登录</span>
+      </span>
+    </el-dialog>
+
+    <div class="ff" :style="showUnreceiveRules || ManualInput ? 'filter: blur(5px)':''">
+      <div class="update">
+        <div class="root" @click="showUnreceiveRules = true">
+          <span class="rejection">规则更新：有馆藏类印章或标签的书拒收</span>
+          <div class="symbol">
+            <svg
+              width="20px"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              xmlns="http://www.w3.org/2000/svg"
+              class="Icon"
+            >
+              <polyline points="9 18 15 12 9 6" />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="operation">
+        <div class="all">
+          <div class="scan">
+            <div class="detailsqwe">
+              <img src="https://asset.duozhuayu.com/sell_intro_1.png" class="one" />
+              <div class="details_describe">
+                <div class="ti">
+                  手机扫码
+                  <br />看收购价
+                </div>
+
+                <div class="requirement" @click="isShow = !isShow">
+                  <div>{{isShow ? "什么书不收" : "什么书不收"}}</div>
+                  <!-- 品相良好图片实例 -->
+                  <div v-if="isShow">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="Icon"
+                      width="16"
+                      height="16"
+                    >
+                      <polyline points="6 9 12 15 18 9" />
+                    </svg>
+                  </div>
+                  <div v-if="!isShow">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="Icon"
+                      width="16"
+                      height="16"
+                    >
+                      <polyline points="18 15 12 9 6 15" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="condition" v-if="isShow">
+            <ul class="condition_desc">
+              <li class="part">
+                <!-- <div class="gg"> -->
+                <svg
+                  t="1565271025712"
+                  class="icon"
+                  viewBox="0 0 1024 1024"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  p-id="3936"
+                  width="22"
+                  height="22"
+                >
+                  <path
+                    d="M512 512m-128 0a128 128 0 1 0 256 0 128 128 0 1 0-256 0Z"
+                    p-id="3937"
+                    fill="#18C3AA"
+                  />
+                </svg>
+                <!-- </div> -->
+                扫码提示不收或在安排快递前线上审核显示拒绝的就是暂时不收的
+              </li>
+              <li class="part">
+                <svg
+                  t="1565271025712"
+                  class="icon"
+                  viewBox="0 0 1024 1024"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  p-id="3936"
+                  width="22"
+                  height="22"
+                >
+                  <path
+                    d="M512 512m-128 0a128 128 0 1 0 256 0 128 128 0 1 0-256 0Z"
+                    p-id="3937"
+                    fill="#18C3AA"
+                  />
+                </svg>
+                不收有影响阅读的破损、污渍、老化、异味的书。
+              </li>
+              <li class="part">
+                <svg
+                  t="1565271025712"
+                  class="icon"
+                  viewBox="0 0 1024 1024"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  p-id="3936"
+                  width="22"
+                  height="22"
+                >
+                  <path
+                    d="M512 512m-128 0a128 128 0 1 0 256 0 128 128 0 1 0-256 0Z"
+                    p-id="3937"
+                    fill="#18C3AA"
+                  />
+                </svg>
+                不收盗版、非卖品、非法出版物。
+              </li>
+              <br />
+            </ul>
+          </div>
+        </div>
+        <div class="all">
+          <div class="scan">
+            <div class="detailsqwe">
+              <img src="https://asset.duozhuayu.com/sell_intro_2.png" class="one" />
+              <div class="details_describe">
+                <div class="ti">
+                  快递免费
+                  <br />上门取书
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="all">
+          <div class="scan">
+            <div class="detailsqwe">
+              <img src="https://asset.duozhuayu.com/sell_intro_3.png" class="one" />
+              <div class="details_describe">
+                <div class="ti">
+                  审核通过
+                  <br />书款到账
+                </div>
+
+                <div class="requirement" @click="bb = !bb">
+                  {{bb ? "什么是审核" : "什么是审核"}}
+                  <!-- 品相良好图片实例 -->
+                  <div v-if="bb">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="Icon"
+                      width="16"
+                      height="16"
+                    >
+                      <polyline points="6 9 12 15 18 9" />
+                    </svg>
+                  </div>
+                  <div v-if="!bb">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="Icon"
+                      width="16"
+                      height="16"
+                    >
+                      <polyline points="18 15 12 9 6 15" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="condition" v-if="bb">
+            <ul class="condition_desc">
+              <li class="part">
+                <svg
+                  t="1565271025712"
+                  class="icon"
+                  viewBox="0 0 1024 1024"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  p-id="3936"
+                  width="22"
+                  height="22"
+                >
+                  <path
+                    d="M512 512m-128 0a128 128 0 1 0 256 0 128 128 0 1 0-256 0Z"
+                    p-id="3937"
+                    fill="#18C3AA"
+                  />
+                </svg>
+                多抓鱼在收到书时会进行品相审核，这一步会把书籍的品相分为全新、品相良好、品相中等、品相不合格，其中品相中等的收购价比全新和品相良好的要低 20%，品相不合格的书会被拒收。
+              </li>
+              <li class="part">
+                <svg
+                  t="1565271025712"
+                  class="icon"
+                  viewBox="0 0 1024 1024"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  p-id="3936"
+                  width="22"
+                  height="22"
+                >
+                  <path
+                    d="M512 512m-128 0a128 128 0 1 0 256 0 128 128 0 1 0-256 0Z"
+                    p-id="3937"
+                    fill="#18C3AA"
+                  />
+                </svg>
+                卖家可以自付运费取回被拒的书（首次取回免费）。
+              </li>
+
+              <br />
+            </ul>
+          </div>
+        </div>
+        <router-link class="regulation" to="/support/problems">
+          了解更多卖书规则
+          <svg
+            width="24px"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            xmlns="http://www.w3.org/2000/svg"
+            class="Icon"
+          >
+            <polyline points="9 18 15 12 9 6" />
+          </svg>
+        </router-link>
+      </div>
+      <div class="Fixed">
+        <div class="sellPage">
+          <button class="sellPage_button">
+            <svg
+              viewBox="26 26 55 56"
+              fill="none"
+              stroke="#fff"
+              stroke-width="3"
+              stroke-linecap="round"
+              class="SellPage-scanIcon"
+            >
+              <g transform="translate(28.000000, 28.000000)">
+                <path d="M25.5,15.3363636 L25.5,36.3363636" />
+                <path d="M36.0863392,25.5 L15.0863392,25.5" />
+                <path
+                  d="M0,15.9363158 L0,7.51316586 C0,3.36375893 3.37157192,0 7.51176174,0 L15.0235235,0"
+                />
+                <path
+                  d="M0,51.9363158 L0,43.5131659 C0,39.3637589 3.37157192,36 7.51176174,36 L15.0235235,36"
+                  transform="translate(7.511762, 43.968158) scale(1, -1) translate(-7.511762, -43.968158)"
+                />
+                <path
+                  d="M36,15.9363158 L36,7.51316586 C36,3.36375893 39.3715719,0 43.5117617,0 L51.0235235,0"
+                  transform="translate(43.511762, 7.968158) scale(-1, 1) translate(-43.511762, -7.968158)"
+                />
+                <path
+                  d="M36,51.9363158 L36,43.5131659 C36,39.3637589 39.3715719,36 43.5117617,36 L51.0235235,36"
+                  transform="translate(43.511762, 43.968158) scale(-1, -1) translate(-43.511762, -43.968158)"
+                />
+              </g>
+            </svg>
+            扫码卖书
+          </button>
+        </div>
+        <div class="SellPage-actions">
+          <span class="SellPage-link" @click="ManualInputIsbn">手动输入 ISBN</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+<style lang="scss">
+@import "../../assets/scss/sellBook/SellSynopsis.scss";
+</style> 
+<script>
+import axios from "axios";
+import QrcodeVue from "qrcode.vue";
+import { setInterval } from "timers";
+export default {
+  data() {
+    return {
+      isShow: false,
+      bb: false,
+      showUnreceiveRules: false,
+      isbn: "",
+      ManualInput: false,
+      userId: 0,
+      showLogin: false,
+      qrcodeValue:
+        "https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxc3758a49f9d0e965&redirect_uri=http://192.168.6.28:8080/dzy/user/login/newUser&response_type=code&scope=snsapi_userinfo#wechat_redirect"
+    };
+  },
+  methods: {
+    commitIsbn() {
+      if (this.isbn.length == 10 || this.isbn.length == 13) {
+        axios.post("/book/unsold/isbn?isbn=" + this.isbn).then(res => {
+          this.ManualInput = false;
+          this.$router.push({
+            path: "/sell"
+          });
+        });
+      } else {
+        document.getElementsByClassName("inputfales")[0].style.display =
+          "block";
+      }
+    },
+    ManualInputIsbn() {
+      if (!localStorage.getItem("token")) {
+        this.showLogin = true;
+        let temp = setInterval(function() {
+          axios.get("/user/login/check").then(res => {
+            console.info(res.data);
+            if (res.data.data) {
+              clearInterval(temp);
+              this.$localStorage.set("token", res.data.data);
+              this.$router.push({ path: "/" });
+            }
+          });
+        }, 2000);
+        return;
+      }
+      this.ManualInput = true;
+    },
+    cancelLogin() {
+      this.$router.push({ path: "/" });
+    }
+  },
+  components: {
+    QrcodeVue
+  }
+};
+</script>
+

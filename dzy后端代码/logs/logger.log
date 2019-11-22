@@ -1,0 +1,383 @@
+08:39:37.697 [restartedMain] INFO  c.c.s.d.DzyApplication - [logStarting,50] - Starting DzyApplication on 雄哥 with PID 11964 (started by AIERXUAN in E:\dzy后端代码)
+08:39:37.703 [restartedMain] INFO  c.c.s.d.DzyApplication - [logStartupProfileInfo,650] - The following profiles are active: dev
+08:39:37.761 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - [logTo,225] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+08:39:37.762 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - [logTo,225] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+08:39:39.385 [restartedMain] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,90] - Tomcat initialized with port(s): 8090 (http)
+08:39:39.398 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8090"]
+08:39:39.408 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+08:39:39.408 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+08:39:39.503 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+08:39:39.503 [restartedMain] INFO  o.s.w.c.ContextLoader - [prepareWebApplicationContext,283] - Root WebApplicationContext: initialization completed in 1741 ms
+08:39:40.166 [restartedMain] INFO  c.c.s.d.c.a.DelayOrder - [init,87] - 容器启动
+08:39:40.166 [Thread-10] INFO  c.c.s.d.c.a.DelayOrder - [run,59] - 处理到期订单线程已启动
+08:39:40.166 [restartedMain] INFO  c.c.s.d.c.a.DelayOrder - [initDelayOrder,98] - 系统启动，查询出未支付的订单。。。。。
+08:39:40.213 [restartedMain] INFO  c.a.d.p.DruidDataSource - [info,106] - {dataSource-1} inited
+08:39:43.465 [restartedMain] INFO  c.c.s.d.s.OrderService - [queryNoPayOrder,365] - 未支付订单数量：0
+08:39:43.476 [restartedMain] INFO  c.c.s.d.c.a.DelayOrder - [initDelayOrder,102] - 系统启动，还有0 个未到期未付款的订单
+08:39:43.896 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - [initialize,171] - Initializing ExecutorService 'applicationTaskExecutor'
+08:39:44.216 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - [startServer,57] - LiveReload server is running on port 35729
+08:39:44.246 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8090"]
+08:39:44.267 [restartedMain] INFO  o.s.b.w.e.t.TomcatWebServer - [start,202] - Tomcat started on port(s): 8090 (http) with context path ''
+08:39:44.271 [restartedMain] INFO  c.c.s.d.DzyApplication - [logStarted,59] - Started DzyApplication in 7.152 seconds (JVM running for 8.399)
+08:49:32.134 [http-nio-8090-exec-4] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+08:49:32.134 [http-nio-8090-exec-4] INFO  o.s.w.s.DispatcherServlet - [initServletBean,524] - Initializing Servlet 'dispatcherServlet'
+08:49:32.144 [http-nio-8090-exec-4] INFO  o.s.w.s.DispatcherServlet - [initServletBean,546] - Completed initialization in 9 ms
+08:49:32.182 [http-nio-8090-exec-3] INFO  c.c.s.d.c.c.CartController - [queryHasStockCartsCount,219] - 查询用户购物车有库存商品数量
+08:49:32.193 [http-nio-8090-exec-4] INFO  c.c.s.d.c.b.BookController - [getIsSellBookSkuList,45] - name =  rate=0.0 pageSize = 3 pageNum =1
+08:49:32.194 [http-nio-8090-exec-4] INFO  c.c.s.d.c.b.BookController - [getIsSellBookSkuList,49] - 查询所有书籍单品信息
+08:49:42.653 [http-nio-8090-exec-7] INFO  c.c.s.d.c.c.CartController - [queryHasStockCartsCount,219] - 查询用户购物车有库存商品数量
+08:49:42.660 [http-nio-8090-exec-8] INFO  c.c.s.d.c.b.BookController - [getIsSellBookSkuList,45] - name =  rate=0.0 pageSize = 3 pageNum =1
+08:49:42.660 [http-nio-8090-exec-8] INFO  c.c.s.d.c.b.BookController - [getIsSellBookSkuList,49] - 查询所有书籍单品信息
+08:50:03.665 [http-nio-8090-exec-9] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,44] - request.getHeader("Cookie") = JSESSIONID=FD5FF8C238B3BCD347FBB766A8556BD9
+08:50:03.666 [http-nio-8090-exec-9] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,45] - request.getHeader("token") = 
+08:50:03.666 [http-nio-8090-exec-9] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,46] - accountMap = {}
+08:50:03.666 [http-nio-8090-exec-9] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,47] - 当前请求的接口 = /dzy/cart
+08:50:03.670 [http-nio-8090-exec-10] INFO  c.c.s.d.c.ContronllerAdvice - [exception,44] - 拦截异常e = java.lang.NullPointerException
+08:50:03.680 [http-nio-8090-exec-10] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - [logException,198] - Resolved [java.lang.NullPointerException]
+08:50:06.461 [http-nio-8090-exec-4] INFO  c.c.s.d.c.c.CartController - [queryHasStockCartsCount,219] - 查询用户购物车有库存商品数量
+08:50:06.531 [http-nio-8090-exec-7] INFO  c.c.s.d.c.b.BookController - [getIsSellBookSkuList,45] - name =  rate=0.0 pageSize = 3 pageNum =1
+08:50:06.531 [http-nio-8090-exec-7] INFO  c.c.s.d.c.b.BookController - [getIsSellBookSkuList,49] - 查询所有书籍单品信息
+08:50:52.478 [http-nio-8090-exec-3] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,44] - request.getHeader("Cookie") = JSESSIONID=FD5FF8C238B3BCD347FBB766A8556BD9
+08:50:52.479 [http-nio-8090-exec-3] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,45] - request.getHeader("token") = 
+08:50:52.479 [http-nio-8090-exec-3] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,46] - accountMap = {}
+08:50:52.479 [http-nio-8090-exec-3] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,47] - 当前请求的接口 = /dzy/cart
+08:50:52.481 [http-nio-8090-exec-4] INFO  c.c.s.d.c.ContronllerAdvice - [exception,44] - 拦截异常e = java.lang.NullPointerException
+08:50:52.483 [http-nio-8090-exec-4] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - [logException,198] - Resolved [java.lang.NullPointerException]
+08:52:11.799 [http-nio-8090-exec-1] INFO  c.c.s.d.c.c.CartController - [queryHasStockCartsCount,219] - 查询用户购物车有库存商品数量
+08:52:11.811 [http-nio-8090-exec-3] INFO  c.c.s.d.c.b.BookController - [getIsSellBookSkuList,45] - name =  rate=0.0 pageSize = 3 pageNum =1
+08:52:11.812 [http-nio-8090-exec-3] INFO  c.c.s.d.c.b.BookController - [getIsSellBookSkuList,49] - 查询所有书籍单品信息
+08:52:12.980 [http-nio-8090-exec-4] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,44] - request.getHeader("Cookie") = JSESSIONID=FD5FF8C238B3BCD347FBB766A8556BD9
+08:52:12.980 [http-nio-8090-exec-4] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,45] - request.getHeader("token") = 
+08:52:12.981 [http-nio-8090-exec-4] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,46] - accountMap = {}
+08:52:12.981 [http-nio-8090-exec-4] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,47] - 当前请求的接口 = /dzy/cart
+08:52:12.985 [http-nio-8090-exec-2] INFO  c.c.s.d.c.ContronllerAdvice - [exception,44] - 拦截异常e = java.lang.NullPointerException
+08:52:12.987 [http-nio-8090-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - [logException,198] - Resolved [java.lang.NullPointerException]
+08:53:36.265 [http-nio-8090-exec-2] INFO  c.c.s.d.c.c.CartController - [queryHasStockCartsCount,219] - 查询用户购物车有库存商品数量
+08:53:36.280 [http-nio-8090-exec-5] INFO  c.c.s.d.c.b.BookController - [getIsSellBookSkuList,45] - name =  rate=0.0 pageSize = 3 pageNum =1
+08:53:36.280 [http-nio-8090-exec-5] INFO  c.c.s.d.c.b.BookController - [getIsSellBookSkuList,49] - 查询所有书籍单品信息
+08:53:39.370 [http-nio-8090-exec-8] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,44] - request.getHeader("Cookie") = JSESSIONID=FD5FF8C238B3BCD347FBB766A8556BD9
+08:53:39.370 [http-nio-8090-exec-8] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,45] - request.getHeader("token") = 
+08:53:39.370 [http-nio-8090-exec-8] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,46] - accountMap = {}
+08:53:39.371 [http-nio-8090-exec-8] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,47] - 当前请求的接口 = /dzy/cart
+08:53:39.373 [http-nio-8090-exec-1] INFO  c.c.s.d.c.ContronllerAdvice - [exception,44] - 拦截异常e = java.lang.NullPointerException
+08:53:39.375 [http-nio-8090-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - [logException,198] - Resolved [java.lang.NullPointerException]
+08:54:07.995 [http-nio-8090-exec-9] INFO  c.c.s.d.c.c.CartController - [queryHasStockCartsCount,219] - 查询用户购物车有库存商品数量
+08:54:08.09 [http-nio-8090-exec-3] INFO  c.c.s.d.c.b.BookController - [getIsSellBookSkuList,45] - name =  rate=0.0 pageSize = 3 pageNum =1
+08:54:08.10 [http-nio-8090-exec-3] INFO  c.c.s.d.c.b.BookController - [getIsSellBookSkuList,49] - 查询所有书籍单品信息
+08:55:04.589 [http-nio-8090-exec-8] INFO  c.c.s.d.c.c.CartController - [queryHasStockCartsCount,219] - 查询用户购物车有库存商品数量
+08:55:04.595 [http-nio-8090-exec-9] INFO  c.c.s.d.c.b.BookController - [getIsSellBookSkuList,45] - name =  rate=0.0 pageSize = 3 pageNum =1
+08:55:04.595 [http-nio-8090-exec-9] INFO  c.c.s.d.c.b.BookController - [getIsSellBookSkuList,49] - 查询所有书籍单品信息
+08:55:09.278 [http-nio-8090-exec-1] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,44] - request.getHeader("Cookie") = JSESSIONID=7975FE5114603D83B46E7F9E824F4365
+08:55:09.279 [http-nio-8090-exec-1] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,45] - request.getHeader("token") = 
+08:55:09.279 [http-nio-8090-exec-1] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,46] - accountMap = {}
+08:55:09.279 [http-nio-8090-exec-1] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,47] - 当前请求的接口 = /dzy/cart
+08:55:09.283 [http-nio-8090-exec-10] INFO  c.c.s.d.c.ContronllerAdvice - [exception,44] - 拦截异常e = java.lang.NullPointerException
+08:55:09.285 [http-nio-8090-exec-10] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - [logException,198] - Resolved [java.lang.NullPointerException]
+08:56:16.906 [http-nio-8090-exec-5] INFO  c.c.s.d.c.c.CartController - [queryHasStockCartsCount,219] - 查询用户购物车有库存商品数量
+08:56:16.924 [http-nio-8090-exec-6] INFO  c.c.s.d.c.b.BookController - [getIsSellBookSkuList,45] - name =  rate=0.0 pageSize = 3 pageNum =1
+08:56:16.924 [http-nio-8090-exec-6] INFO  c.c.s.d.c.b.BookController - [getIsSellBookSkuList,49] - 查询所有书籍单品信息
+08:56:19.908 [http-nio-8090-exec-9] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,44] - request.getHeader("Cookie") = JSESSIONID=F365873BBF60A23D14BF0617CE3F6062
+08:56:19.909 [http-nio-8090-exec-9] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,45] - request.getHeader("token") = 
+08:56:19.909 [http-nio-8090-exec-9] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,46] - accountMap = {}
+08:56:19.909 [http-nio-8090-exec-9] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,47] - 当前请求的接口 = /dzy/sell
+08:56:21.794 [http-nio-8090-exec-4] INFO  c.c.s.d.c.c.CartController - [queryHasStockCartsCount,219] - 查询用户购物车有库存商品数量
+08:56:21.934 [http-nio-8090-exec-2] INFO  c.c.s.d.c.b.BookController - [getIsSellBookSkuList,45] - name =  rate=0.0 pageSize = 3 pageNum =1
+08:56:21.934 [http-nio-8090-exec-2] INFO  c.c.s.d.c.b.BookController - [getIsSellBookSkuList,49] - 查询所有书籍单品信息
+08:59:15.426 [http-nio-8090-exec-8] INFO  c.c.s.d.c.c.CartController - [queryHasStockCartsCount,219] - 查询用户购物车有库存商品数量
+08:59:15.492 [http-nio-8090-exec-6] INFO  c.c.s.d.c.b.BookController - [getIsSellBookSkuList,45] - name =  rate=0.0 pageSize = 3 pageNum =1
+08:59:15.493 [http-nio-8090-exec-6] INFO  c.c.s.d.c.b.BookController - [getIsSellBookSkuList,49] - 查询所有书籍单品信息
+08:59:15.613 [http-nio-8090-exec-9] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,44] - request.getHeader("Cookie") = JSESSIONID=F365873BBF60A23D14BF0617CE3F6062
+08:59:15.614 [http-nio-8090-exec-9] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,45] - request.getHeader("token") = 
+08:59:15.615 [http-nio-8090-exec-9] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,46] - accountMap = {}
+08:59:15.616 [http-nio-8090-exec-9] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,47] - 当前请求的接口 = /dzy/cart
+08:59:15.617 [http-nio-8090-exec-1] INFO  c.c.s.d.c.ContronllerAdvice - [exception,44] - 拦截异常e = java.lang.NullPointerException
+08:59:15.620 [http-nio-8090-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - [logException,198] - Resolved [java.lang.NullPointerException]
+08:59:19.756 [http-nio-8090-exec-10] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,44] - request.getHeader("Cookie") = JSESSIONID=F365873BBF60A23D14BF0617CE3F6062
+08:59:19.756 [http-nio-8090-exec-10] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,45] - request.getHeader("token") = 
+08:59:19.757 [http-nio-8090-exec-10] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,46] - accountMap = {}
+08:59:19.757 [http-nio-8090-exec-10] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,47] - 当前请求的接口 = /dzy/cart/checkout
+08:59:19.758 [http-nio-8090-exec-4] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,44] - request.getHeader("Cookie") = JSESSIONID=F365873BBF60A23D14BF0617CE3F6062
+08:59:19.759 [http-nio-8090-exec-4] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,45] - request.getHeader("token") = 
+08:59:19.759 [http-nio-8090-exec-4] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,46] - accountMap = {}
+08:59:19.759 [http-nio-8090-exec-4] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,47] - 当前请求的接口 = /dzy/addr
+08:59:19.783 [http-nio-8090-exec-2] INFO  c.c.s.d.c.ContronllerAdvice - [exception,44] - 拦截异常e = java.lang.NullPointerException
+08:59:19.784 [http-nio-8090-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - [logException,198] - Resolved [java.lang.NullPointerException]
+08:59:25.757 [http-nio-8090-exec-8] INFO  c.c.s.d.c.ContronllerAdvice - [exception,44] - 拦截异常e = org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 2
+08:59:25.759 [http-nio-8090-exec-8] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - [logException,198] - Resolved [org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 2]
+08:59:27.53 [http-nio-8090-exec-5] INFO  c.c.s.d.c.ContronllerAdvice - [exception,44] - 拦截异常e = org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 2
+08:59:27.54 [http-nio-8090-exec-5] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - [logException,198] - Resolved [org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 2]
+08:59:38.238 [http-nio-8090-exec-7] INFO  c.c.s.d.c.ContronllerAdvice - [exception,44] - 拦截异常e = org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 2
+08:59:38.240 [http-nio-8090-exec-7] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - [logException,198] - Resolved [org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 2]
+09:01:21.363 [http-nio-8090-exec-6] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,44] - request.getHeader("Cookie") = JSESSIONID=F365873BBF60A23D14BF0617CE3F6062
+09:01:21.363 [http-nio-8090-exec-6] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,45] - request.getHeader("token") = 
+09:01:21.363 [http-nio-8090-exec-6] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,46] - accountMap = {}
+09:01:21.364 [http-nio-8090-exec-6] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,47] - 当前请求的接口 = /dzy/cart/checkout
+09:01:21.367 [http-nio-8090-exec-9] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,44] - request.getHeader("Cookie") = JSESSIONID=F365873BBF60A23D14BF0617CE3F6062
+09:01:21.367 [http-nio-8090-exec-9] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,45] - request.getHeader("token") = 
+09:01:21.367 [http-nio-8090-exec-9] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,46] - accountMap = {}
+09:01:21.367 [http-nio-8090-exec-9] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,47] - 当前请求的接口 = /dzy/addr
+09:01:21.427 [http-nio-8090-exec-10] INFO  c.c.s.d.c.ContronllerAdvice - [exception,44] - 拦截异常e = java.lang.NullPointerException
+09:01:21.429 [http-nio-8090-exec-10] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - [logException,198] - Resolved [java.lang.NullPointerException]
+09:01:22.118 [http-nio-8090-exec-4] INFO  c.c.s.d.c.ContronllerAdvice - [exception,44] - 拦截异常e = org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 2
+09:01:22.120 [http-nio-8090-exec-4] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - [logException,198] - Resolved [org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 2]
+09:01:43.202 [http-nio-8090-exec-2] INFO  c.c.s.d.c.ContronllerAdvice - [exception,44] - 拦截异常e = org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 2
+09:01:43.203 [http-nio-8090-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - [logException,198] - Resolved [org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 2]
+09:02:31.87 [http-nio-8090-exec-3] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,44] - request.getHeader("Cookie") = JSESSIONID=F365873BBF60A23D14BF0617CE3F6062
+09:02:31.88 [http-nio-8090-exec-3] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,45] - request.getHeader("token") = 
+09:02:31.88 [http-nio-8090-exec-3] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,46] - accountMap = {}
+09:02:31.88 [http-nio-8090-exec-3] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,47] - 当前请求的接口 = /dzy/cart/checkout
+09:02:31.271 [http-nio-8090-exec-8] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,44] - request.getHeader("Cookie") = JSESSIONID=F365873BBF60A23D14BF0617CE3F6062
+09:02:31.271 [http-nio-8090-exec-8] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,45] - request.getHeader("token") = 
+09:02:31.272 [http-nio-8090-exec-8] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,46] - accountMap = {}
+09:02:31.272 [http-nio-8090-exec-8] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,47] - 当前请求的接口 = /dzy/addr
+09:02:31.584 [http-nio-8090-exec-7] INFO  c.c.s.d.c.ContronllerAdvice - [exception,44] - 拦截异常e = java.lang.NullPointerException
+09:02:31.586 [http-nio-8090-exec-7] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - [logException,198] - Resolved [java.lang.NullPointerException]
+09:02:33.90 [http-nio-8090-exec-6] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,44] - request.getHeader("Cookie") = JSESSIONID=F365873BBF60A23D14BF0617CE3F6062
+09:02:33.90 [http-nio-8090-exec-6] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,45] - request.getHeader("token") = 
+09:02:33.90 [http-nio-8090-exec-6] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,46] - accountMap = {}
+09:02:33.91 [http-nio-8090-exec-6] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,47] - 当前请求的接口 = /dzy/cart/checkout
+09:02:33.94 [http-nio-8090-exec-9] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,44] - request.getHeader("Cookie") = JSESSIONID=F365873BBF60A23D14BF0617CE3F6062
+09:02:33.94 [http-nio-8090-exec-9] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,45] - request.getHeader("token") = 
+09:02:33.94 [http-nio-8090-exec-9] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,46] - accountMap = {}
+09:02:33.94 [http-nio-8090-exec-9] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,47] - 当前请求的接口 = /dzy/addr
+09:02:33.196 [http-nio-8090-exec-1] INFO  c.c.s.d.c.ContronllerAdvice - [exception,44] - 拦截异常e = java.lang.NullPointerException
+09:02:33.198 [http-nio-8090-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - [logException,198] - Resolved [java.lang.NullPointerException]
+09:02:54.36 [http-nio-8090-exec-4] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,44] - request.getHeader("Cookie") = JSESSIONID=F365873BBF60A23D14BF0617CE3F6062
+09:02:54.36 [http-nio-8090-exec-4] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,45] - request.getHeader("token") = 
+09:02:54.36 [http-nio-8090-exec-4] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,46] - accountMap = {}
+09:02:54.36 [http-nio-8090-exec-4] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,47] - 当前请求的接口 = /dzy/cart/checkout
+09:02:54.39 [http-nio-8090-exec-2] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,44] - request.getHeader("Cookie") = JSESSIONID=F365873BBF60A23D14BF0617CE3F6062
+09:02:54.40 [http-nio-8090-exec-2] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,45] - request.getHeader("token") = 
+09:02:54.40 [http-nio-8090-exec-2] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,46] - accountMap = {}
+09:02:54.40 [http-nio-8090-exec-2] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,47] - 当前请求的接口 = /dzy/addr
+09:02:54.100 [http-nio-8090-exec-8] INFO  c.c.s.d.c.ContronllerAdvice - [exception,44] - 拦截异常e = java.lang.NullPointerException
+09:02:54.101 [http-nio-8090-exec-8] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - [logException,198] - Resolved [java.lang.NullPointerException]
+09:02:57.960 [http-nio-8090-exec-5] INFO  c.c.s.d.c.ContronllerAdvice - [exception,44] - 拦截异常e = org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 2
+09:02:57.962 [http-nio-8090-exec-5] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - [logException,198] - Resolved [org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 2]
+09:02:58.335 [http-nio-8090-exec-7] INFO  c.c.s.d.c.ContronllerAdvice - [exception,44] - 拦截异常e = org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 2
+09:02:58.336 [http-nio-8090-exec-7] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - [logException,198] - Resolved [org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 2]
+09:02:59.307 [http-nio-8090-exec-6] INFO  c.c.s.d.c.ContronllerAdvice - [exception,44] - 拦截异常e = org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 2
+09:02:59.309 [http-nio-8090-exec-6] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - [logException,198] - Resolved [org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 2]
+09:02:59.553 [http-nio-8090-exec-9] INFO  c.c.s.d.c.ContronllerAdvice - [exception,44] - 拦截异常e = org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 2
+09:02:59.555 [http-nio-8090-exec-9] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - [logException,198] - Resolved [org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 2]
+09:02:59.817 [http-nio-8090-exec-10] INFO  c.c.s.d.c.ContronllerAdvice - [exception,44] - 拦截异常e = org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 2
+09:02:59.819 [http-nio-8090-exec-10] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - [logException,198] - Resolved [org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 2]
+09:03:00.364 [http-nio-8090-exec-1] INFO  c.c.s.d.c.ContronllerAdvice - [exception,44] - 拦截异常e = org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 2
+09:03:00.368 [http-nio-8090-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - [logException,198] - Resolved [org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 2]
+09:03:08.309 [http-nio-8090-exec-4] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,44] - request.getHeader("Cookie") = JSESSIONID=F365873BBF60A23D14BF0617CE3F6062
+09:03:08.309 [http-nio-8090-exec-4] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,45] - request.getHeader("token") = 
+09:03:08.310 [http-nio-8090-exec-4] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,46] - accountMap = {}
+09:03:08.310 [http-nio-8090-exec-4] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,47] - 当前请求的接口 = /dzy/cart/checkout
+09:03:08.314 [http-nio-8090-exec-2] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,44] - request.getHeader("Cookie") = JSESSIONID=F365873BBF60A23D14BF0617CE3F6062
+09:03:08.314 [http-nio-8090-exec-2] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,45] - request.getHeader("token") = 
+09:03:08.314 [http-nio-8090-exec-2] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,46] - accountMap = {}
+09:03:08.315 [http-nio-8090-exec-2] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,47] - 当前请求的接口 = /dzy/addr
+09:03:08.394 [http-nio-8090-exec-3] INFO  c.c.s.d.c.ContronllerAdvice - [exception,44] - 拦截异常e = java.lang.NullPointerException
+09:03:08.410 [http-nio-8090-exec-3] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - [logException,198] - Resolved [java.lang.NullPointerException]
+09:03:14.41 [http-nio-8090-exec-5] INFO  c.c.s.d.c.ContronllerAdvice - [exception,44] - 拦截异常e = org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 2
+09:03:14.42 [http-nio-8090-exec-5] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - [logException,198] - Resolved [org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 2]
+09:05:05.145 [http-nio-8090-exec-7] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,44] - request.getHeader("Cookie") = JSESSIONID=F365873BBF60A23D14BF0617CE3F6062
+09:05:05.145 [http-nio-8090-exec-7] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,45] - request.getHeader("token") = 
+09:05:05.145 [http-nio-8090-exec-7] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,46] - accountMap = {}
+09:05:05.146 [http-nio-8090-exec-7] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,47] - 当前请求的接口 = /dzy/cart/checkout
+09:05:05.332 [http-nio-8090-exec-6] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,44] - request.getHeader("Cookie") = JSESSIONID=F365873BBF60A23D14BF0617CE3F6062
+09:05:05.332 [http-nio-8090-exec-6] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,45] - request.getHeader("token") = 
+09:05:05.332 [http-nio-8090-exec-6] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,46] - accountMap = {}
+09:05:05.332 [http-nio-8090-exec-6] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,47] - 当前请求的接口 = /dzy/addr
+09:05:05.646 [http-nio-8090-exec-10] INFO  c.c.s.d.c.ContronllerAdvice - [exception,44] - 拦截异常e = java.lang.NullPointerException
+09:05:05.648 [http-nio-8090-exec-10] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - [logException,198] - Resolved [java.lang.NullPointerException]
+09:05:12.10 [http-nio-8090-exec-1] INFO  c.c.s.d.c.ContronllerAdvice - [exception,44] - 拦截异常e = org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 2
+09:05:12.12 [http-nio-8090-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - [logException,198] - Resolved [org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 2]
+09:05:15.676 [http-nio-8090-exec-4] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,44] - request.getHeader("Cookie") = JSESSIONID=F365873BBF60A23D14BF0617CE3F6062
+09:05:15.676 [http-nio-8090-exec-4] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,45] - request.getHeader("token") = 
+09:05:15.676 [http-nio-8090-exec-4] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,46] - accountMap = {}
+09:05:15.676 [http-nio-8090-exec-4] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,47] - 当前请求的接口 = /dzy/cart/checkout
+09:05:15.906 [http-nio-8090-exec-2] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,44] - request.getHeader("Cookie") = JSESSIONID=F365873BBF60A23D14BF0617CE3F6062
+09:05:15.906 [http-nio-8090-exec-2] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,45] - request.getHeader("token") = 
+09:05:15.906 [http-nio-8090-exec-2] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,46] - accountMap = {}
+09:05:15.906 [http-nio-8090-exec-2] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,47] - 当前请求的接口 = /dzy/addr
+09:05:16.217 [http-nio-8090-exec-8] INFO  c.c.s.d.c.ContronllerAdvice - [exception,44] - 拦截异常e = java.lang.NullPointerException
+09:05:16.219 [http-nio-8090-exec-8] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - [logException,198] - Resolved [java.lang.NullPointerException]
+09:05:42.905 [http-nio-8090-exec-7] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,44] - request.getHeader("Cookie") = JSESSIONID=F365873BBF60A23D14BF0617CE3F6062
+09:05:42.905 [http-nio-8090-exec-7] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,45] - request.getHeader("token") = 
+09:05:42.905 [http-nio-8090-exec-7] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,46] - accountMap = {}
+09:05:42.906 [http-nio-8090-exec-7] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,47] - 当前请求的接口 = /dzy/cart/checkout
+09:05:42.909 [http-nio-8090-exec-6] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,44] - request.getHeader("Cookie") = JSESSIONID=F365873BBF60A23D14BF0617CE3F6062
+09:05:42.910 [http-nio-8090-exec-6] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,45] - request.getHeader("token") = 
+09:05:42.910 [http-nio-8090-exec-6] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,46] - accountMap = {}
+09:05:42.910 [http-nio-8090-exec-6] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,47] - 当前请求的接口 = /dzy/addr
+09:05:42.971 [http-nio-8090-exec-10] INFO  c.c.s.d.c.ContronllerAdvice - [exception,44] - 拦截异常e = java.lang.NullPointerException
+09:05:42.973 [http-nio-8090-exec-10] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - [logException,198] - Resolved [java.lang.NullPointerException]
+09:07:20.891 [http-nio-8090-exec-4] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,44] - request.getHeader("Cookie") = JSESSIONID=F365873BBF60A23D14BF0617CE3F6062
+09:07:20.892 [http-nio-8090-exec-4] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,45] - request.getHeader("token") = 
+09:07:20.892 [http-nio-8090-exec-4] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,46] - accountMap = {}
+09:07:20.892 [http-nio-8090-exec-4] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,47] - 当前请求的接口 = /dzy/cart/checkout
+09:07:20.895 [http-nio-8090-exec-2] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,44] - request.getHeader("Cookie") = JSESSIONID=F365873BBF60A23D14BF0617CE3F6062
+09:07:20.895 [http-nio-8090-exec-2] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,45] - request.getHeader("token") = 
+09:07:20.895 [http-nio-8090-exec-2] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,46] - accountMap = {}
+09:07:20.896 [http-nio-8090-exec-2] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,47] - 当前请求的接口 = /dzy/addr
+09:07:20.960 [http-nio-8090-exec-8] INFO  c.c.s.d.c.ContronllerAdvice - [exception,44] - 拦截异常e = java.lang.NullPointerException
+09:07:20.961 [http-nio-8090-exec-8] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - [logException,198] - Resolved [java.lang.NullPointerException]
+09:07:44.400 [http-nio-8090-exec-7] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,44] - request.getHeader("Cookie") = JSESSIONID=F365873BBF60A23D14BF0617CE3F6062
+09:07:44.400 [http-nio-8090-exec-7] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,45] - request.getHeader("token") = 
+09:07:44.400 [http-nio-8090-exec-7] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,46] - accountMap = {}
+09:07:44.400 [http-nio-8090-exec-7] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,47] - 当前请求的接口 = /dzy/cart/checkout
+09:07:44.404 [http-nio-8090-exec-6] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,44] - request.getHeader("Cookie") = JSESSIONID=F365873BBF60A23D14BF0617CE3F6062
+09:07:44.404 [http-nio-8090-exec-6] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,45] - request.getHeader("token") = 
+09:07:44.404 [http-nio-8090-exec-6] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,46] - accountMap = {}
+09:07:44.404 [http-nio-8090-exec-6] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,47] - 当前请求的接口 = /dzy/addr
+09:07:44.490 [http-nio-8090-exec-9] INFO  c.c.s.d.c.ContronllerAdvice - [exception,44] - 拦截异常e = java.lang.NullPointerException
+09:07:44.492 [http-nio-8090-exec-9] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - [logException,198] - Resolved [java.lang.NullPointerException]
+09:07:45.289 [http-nio-8090-exec-1] INFO  c.c.s.d.c.ContronllerAdvice - [exception,44] - 拦截异常e = org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 2
+09:07:45.290 [http-nio-8090-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - [logException,198] - Resolved [org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 2]
+09:08:02.396 [http-nio-8090-exec-4] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,44] - request.getHeader("Cookie") = JSESSIONID=F365873BBF60A23D14BF0617CE3F6062
+09:08:02.397 [http-nio-8090-exec-4] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,45] - request.getHeader("token") = 
+09:08:02.397 [http-nio-8090-exec-4] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,46] - accountMap = {}
+09:08:02.397 [http-nio-8090-exec-4] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,47] - 当前请求的接口 = /dzy/cart/checkout
+09:08:02.400 [http-nio-8090-exec-2] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,44] - request.getHeader("Cookie") = JSESSIONID=F365873BBF60A23D14BF0617CE3F6062
+09:08:02.400 [http-nio-8090-exec-2] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,45] - request.getHeader("token") = 
+09:08:02.400 [http-nio-8090-exec-2] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,46] - accountMap = {}
+09:08:02.401 [http-nio-8090-exec-2] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,47] - 当前请求的接口 = /dzy/addr
+09:09:08.98 [http-nio-8090-exec-6] INFO  c.c.s.d.c.c.CartController - [queryHasStockCartsCount,219] - 查询用户购物车有库存商品数量
+09:09:08.105 [http-nio-8090-exec-9] INFO  c.c.s.d.c.b.BookController - [getIsSellBookSkuList,45] - name =  rate=0.0 pageSize = 3 pageNum =1
+09:09:08.106 [http-nio-8090-exec-9] INFO  c.c.s.d.c.b.BookController - [getIsSellBookSkuList,49] - 查询所有书籍单品信息
+09:09:09.901 [http-nio-8090-exec-10] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,44] - request.getHeader("Cookie") = JSESSIONID=F365873BBF60A23D14BF0617CE3F6062
+09:09:09.901 [http-nio-8090-exec-10] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,45] - request.getHeader("token") = 
+09:09:09.901 [http-nio-8090-exec-10] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,46] - accountMap = {}
+09:09:09.901 [http-nio-8090-exec-10] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,47] - 当前请求的接口 = /dzy/cart
+09:09:09.905 [http-nio-8090-exec-1] INFO  c.c.s.d.c.ContronllerAdvice - [exception,44] - 拦截异常e = java.lang.NullPointerException
+09:09:09.907 [http-nio-8090-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - [logException,198] - Resolved [java.lang.NullPointerException]
+09:09:59.434 [http-nio-8090-exec-10] INFO  c.c.s.d.c.c.CartController - [queryHasStockCartsCount,219] - 查询用户购物车有库存商品数量
+09:09:59.445 [http-nio-8090-exec-4] INFO  c.c.s.d.c.b.BookController - [getIsSellBookSkuList,45] - name =  rate=0.0 pageSize = 3 pageNum =1
+09:09:59.445 [http-nio-8090-exec-4] INFO  c.c.s.d.c.b.BookController - [getIsSellBookSkuList,49] - 查询所有书籍单品信息
+09:10:05.301 [http-nio-8090-exec-3] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,44] - request.getHeader("Cookie") = JSESSIONID=F365873BBF60A23D14BF0617CE3F6062
+09:10:05.301 [http-nio-8090-exec-3] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,45] - request.getHeader("token") = 
+09:10:05.302 [http-nio-8090-exec-3] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,46] - accountMap = {}
+09:10:05.302 [http-nio-8090-exec-3] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,47] - 当前请求的接口 = /dzy/cart
+09:10:05.308 [http-nio-8090-exec-6] INFO  c.c.s.d.c.ContronllerAdvice - [exception,44] - 拦截异常e = java.lang.NullPointerException
+09:10:05.311 [http-nio-8090-exec-6] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - [logException,198] - Resolved [java.lang.NullPointerException]
+09:11:28.687 [http-nio-8090-exec-3] INFO  c.c.s.d.c.c.CartController - [queryHasStockCartsCount,219] - 查询用户购物车有库存商品数量
+09:11:28.720 [http-nio-8090-exec-6] INFO  c.c.s.d.c.b.BookController - [getIsSellBookSkuList,45] - name =  rate=0.0 pageSize = 3 pageNum =1
+09:11:28.720 [http-nio-8090-exec-6] INFO  c.c.s.d.c.b.BookController - [getIsSellBookSkuList,49] - 查询所有书籍单品信息
+09:11:31.79 [http-nio-8090-exec-5] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,44] - request.getHeader("Cookie") = JSESSIONID=3B894270AAD503CCBFAB2D3F91F9D349
+09:11:31.79 [http-nio-8090-exec-5] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,45] - request.getHeader("token") = 
+09:11:31.80 [http-nio-8090-exec-5] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,46] - accountMap = {}
+09:11:31.80 [http-nio-8090-exec-5] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,47] - 当前请求的接口 = /dzy/cart
+09:11:31.84 [http-nio-8090-exec-7] INFO  c.c.s.d.c.ContronllerAdvice - [exception,44] - 拦截异常e = java.lang.NullPointerException
+09:11:31.88 [http-nio-8090-exec-7] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - [logException,198] - Resolved [java.lang.NullPointerException]
+09:11:35.376 [http-nio-8090-exec-9] INFO  c.c.s.d.c.u.UserWXLoginController - [getCode,96] - state:null
+09:11:47.297 [http-nio-8090-exec-9] INFO  c.c.s.d.c.u.UserWXLoginController - [getCode,132] - 老用户：null
+09:11:47.441 [http-nio-8090-exec-10] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,44] - request.getHeader("Cookie") = JSESSIONID=3B894270AAD503CCBFAB2D3F91F9D349
+09:11:47.442 [http-nio-8090-exec-10] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,45] - request.getHeader("token") = 
+09:11:47.442 [http-nio-8090-exec-10] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,46] - accountMap = {}
+09:11:47.442 [http-nio-8090-exec-10] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,47] - 当前请求的接口 = /dzy/user/info/
+09:11:47.446 [http-nio-8090-exec-1] INFO  c.c.s.d.c.c.CartController - [queryHasStockCartsCount,219] - 查询用户购物车有库存商品数量
+09:11:47.513 [http-nio-8090-exec-10] INFO  c.c.s.d.c.u.UserController - [getUser,96] - 根据id获取用户信息 = 1039052371
+09:11:47.529 [http-nio-8090-exec-10] INFO  c.c.s.d.c.u.UserController - [getUser,98] - user = Account(userId=1039052371, user=User(id=1039052371, name=null, wxName=爱屋及乌, openId=os6oy1iAV1VZ0gHtJF_wtBbLTKN0, cover=http://thirdwx.qlogo.cn/mmopen/vi_32/5ZD6fjj0oSCTlAaDmcEvSVTGfKLXoPhVQeyFEhQoOuLqxNCv41iaVAibltL7xU1250zJPsvfaPuaWFlJCBQzwPmA/132, balance=0.0, addrId=null, enabled=1, createDate=Tue Sep 10 22:48:25 CST 2019, loginDate=Tue Sep 10 22:48:25 CST 2019), address=null)
+09:11:47.566 [http-nio-8090-exec-1] INFO  c.c.s.d.c.c.CartController - [queryHasStockCartsCount,228] - 0
+09:11:49.139 [http-nio-8090-exec-3] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,44] - request.getHeader("Cookie") = JSESSIONID=3B894270AAD503CCBFAB2D3F91F9D349
+09:11:49.140 [http-nio-8090-exec-3] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,45] - request.getHeader("token") = 
+09:11:49.140 [http-nio-8090-exec-3] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,46] - accountMap = {}
+09:11:49.141 [http-nio-8090-exec-3] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,47] - 当前请求的接口 = /dzy/cart
+09:11:49.169 [http-nio-8090-exec-3] INFO  c.c.s.d.c.c.CartController - [queryCarts,168] - 100	1 查询购物车有库存
+09:11:50.945 [http-nio-8090-exec-8] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,44] - request.getHeader("Cookie") = JSESSIONID=3B894270AAD503CCBFAB2D3F91F9D349
+09:11:50.946 [http-nio-8090-exec-8] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,45] - request.getHeader("token") = 
+09:11:50.946 [http-nio-8090-exec-8] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,46] - accountMap = {}
+09:11:50.946 [http-nio-8090-exec-8] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,47] - 当前请求的接口 = /dzy/user/info/
+09:11:50.951 [http-nio-8090-exec-5] INFO  c.c.s.d.c.c.CartController - [queryHasStockCartsCount,219] - 查询用户购物车有库存商品数量
+09:11:50.983 [http-nio-8090-exec-8] INFO  c.c.s.d.c.u.UserController - [getUser,96] - 根据id获取用户信息 = 1039052371
+09:11:50.989 [http-nio-8090-exec-8] INFO  c.c.s.d.c.u.UserController - [getUser,98] - user = Account(userId=1039052371, user=User(id=1039052371, name=null, wxName=爱屋及乌, openId=os6oy1iAV1VZ0gHtJF_wtBbLTKN0, cover=http://thirdwx.qlogo.cn/mmopen/vi_32/5ZD6fjj0oSCTlAaDmcEvSVTGfKLXoPhVQeyFEhQoOuLqxNCv41iaVAibltL7xU1250zJPsvfaPuaWFlJCBQzwPmA/132, balance=0.0, addrId=null, enabled=1, createDate=Tue Sep 10 22:48:25 CST 2019, loginDate=Tue Sep 10 22:48:25 CST 2019), address=null)
+09:11:51.03 [http-nio-8090-exec-5] INFO  c.c.s.d.c.c.CartController - [queryHasStockCartsCount,228] - 0
+09:11:51.757 [http-nio-8090-exec-4] INFO  c.c.s.d.c.c.CartController - [queryHasStockCartsCount,219] - 查询用户购物车有库存商品数量
+09:11:51.840 [http-nio-8090-exec-1] INFO  c.c.s.d.c.b.BookController - [getIsSellBookSkuList,45] - name =  rate=0.0 pageSize = 3 pageNum =1
+09:11:51.840 [http-nio-8090-exec-1] INFO  c.c.s.d.c.b.BookController - [getIsSellBookSkuList,49] - 查询所有书籍单品信息
+09:11:51.852 [http-nio-8090-exec-4] INFO  c.c.s.d.c.c.CartController - [queryHasStockCartsCount,228] - 0
+09:11:53.646 [http-nio-8090-exec-10] INFO  c.c.s.d.c.c.CartController - [queryHasStockCartsCount,219] - 查询用户购物车有库存商品数量
+09:11:53.677 [http-nio-8090-exec-2] INFO  c.c.s.d.c.b.BookController - [getIsSellBook,63] - 查询本书籍所有单品信息 = 33
+09:11:53.686 [http-nio-8090-exec-2] INFO  c.c.s.d.c.b.BookController - [getIsSellBook,66] - bookInfo = BookInfo(status=2, stock=2, sale=2, discount=7.0, condition=1)
+09:11:53.707 [http-nio-8090-exec-10] INFO  c.c.s.d.c.c.CartController - [queryHasStockCartsCount,228] - 0
+09:11:53.812 [http-nio-8090-exec-3] INFO  c.c.s.d.c.c.CartController - [queryBookInCart,200] - 33查询是否在购物车中
+09:11:54.750 [http-nio-8090-exec-8] INFO  c.c.s.d.c.b.BookController - [getBook,78] - 查询本书籍所有单品信息 = 33
+09:11:54.754 [http-nio-8090-exec-8] INFO  c.c.s.d.c.b.BookController - [getBook,81] - bookSku = [Sku(id=24, bookId=33, condition=0, status=null, isFree=true, discount=7.0, stock=0, sale=2, createDate=null, updateDate=null), Sku(id=41, bookId=33, condition=1, status=null, isFree=true, discount=7.0, stock=2, sale=0, createDate=null, updateDate=null)]
+09:11:57.863 [http-nio-8090-exec-7] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,44] - request.getHeader("Cookie") = JSESSIONID=3B894270AAD503CCBFAB2D3F91F9D349
+09:11:57.863 [http-nio-8090-exec-7] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,45] - request.getHeader("token") = 
+09:11:57.863 [http-nio-8090-exec-7] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,46] - accountMap = {}
+09:11:57.863 [http-nio-8090-exec-7] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,47] - 当前请求的接口 = /dzy/cart
+09:11:58.13 [http-nio-8090-exec-7] INFO  c.c.s.d.c.c.CartController - [updateConditoinOfCart,99] - Cart(id=209, userId=null, bookId=33, book=null, condition=1, discount=null, hasOtherCondition=false, hasSelected=false, inOrder=false, hasStock=false, createDate=null, updateDate=null)修改购物车商品品相
+09:11:58.83 [http-nio-8090-exec-9] INFO  c.c.s.d.c.c.CartController - [queryBookInCart,200] - 33查询是否在购物车中
+09:11:58.122 [http-nio-8090-exec-4] INFO  c.c.s.d.c.b.BookController - [getBook,78] - 查询本书籍所有单品信息 = 33
+09:11:58.127 [http-nio-8090-exec-4] INFO  c.c.s.d.c.b.BookController - [getBook,81] - bookSku = [Sku(id=24, bookId=33, condition=0, status=null, isFree=true, discount=7.0, stock=0, sale=2, createDate=null, updateDate=null), Sku(id=41, bookId=33, condition=1, status=null, isFree=true, discount=7.0, stock=2, sale=0, createDate=null, updateDate=null)]
+09:12:02.313 [http-nio-8090-exec-2] INFO  c.c.s.d.c.c.CartController - [queryHasStockCartsCount,219] - 查询用户购物车有库存商品数量
+09:12:02.322 [http-nio-8090-exec-3] INFO  c.c.s.d.c.b.BookController - [getIsSellBookSkuList,45] - name =  rate=0.0 pageSize = 3 pageNum =1
+09:12:02.323 [http-nio-8090-exec-3] INFO  c.c.s.d.c.b.BookController - [getIsSellBookSkuList,49] - 查询所有书籍单品信息
+09:12:02.327 [http-nio-8090-exec-2] INFO  c.c.s.d.c.c.CartController - [queryHasStockCartsCount,228] - 1
+09:12:03.669 [http-nio-8090-exec-6] INFO  c.c.s.d.c.b.BookController - [getIsSellBookSkuList,45] - name =  rate=0.0 pageSize = 3 pageNum =2
+09:12:03.669 [http-nio-8090-exec-6] INFO  c.c.s.d.c.b.BookController - [getIsSellBookSkuList,49] - 查询所有书籍单品信息
+09:12:04.673 [http-nio-8090-exec-5] INFO  c.c.s.d.c.b.BookController - [getIsSellBookSkuList,45] - name =  rate=0.0 pageSize = 3 pageNum =3
+09:12:04.673 [http-nio-8090-exec-5] INFO  c.c.s.d.c.b.BookController - [getIsSellBookSkuList,49] - 查询所有书籍单品信息
+09:12:05.302 [http-nio-8090-exec-8] INFO  c.c.s.d.c.c.CartController - [queryHasStockCartsCount,219] - 查询用户购物车有库存商品数量
+09:12:05.317 [http-nio-8090-exec-7] INFO  c.c.s.d.c.b.BookController - [getIsSellBook,63] - 查询本书籍所有单品信息 = 41
+09:12:05.323 [http-nio-8090-exec-7] INFO  c.c.s.d.c.b.BookController - [getIsSellBook,66] - bookInfo = BookInfo(status=1, stock=1, sale=0, discount=7.0, condition=0)
+09:12:05.332 [http-nio-8090-exec-8] INFO  c.c.s.d.c.c.CartController - [queryHasStockCartsCount,228] - 1
+09:12:05.442 [http-nio-8090-exec-9] INFO  c.c.s.d.c.c.CartController - [queryBookInCart,200] - 41查询是否在购物车中
+09:12:06.73 [http-nio-8090-exec-10] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,44] - request.getHeader("Cookie") = JSESSIONID=3B894270AAD503CCBFAB2D3F91F9D349
+09:12:06.74 [http-nio-8090-exec-10] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,45] - request.getHeader("token") = 
+09:12:06.74 [http-nio-8090-exec-10] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,46] - accountMap = {}
+09:12:06.74 [http-nio-8090-exec-10] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,47] - 当前请求的接口 = /dzy/cart
+09:12:06.85 [http-nio-8090-exec-10] INFO  c.c.s.d.c.c.CartController - [addShopToCart,52] - Cart(id=null, userId=null, bookId=41, book=null, condition=0, discount=null, hasOtherCondition=false, hasSelected=false, inOrder=false, hasStock=false, createDate=null, updateDate=null)添加到购物车
+09:12:06.146 [http-nio-8090-exec-2] INFO  c.c.s.d.c.c.CartController - [queryBookInCart,200] - 41查询是否在购物车中
+09:12:06.152 [http-nio-8090-exec-3] INFO  c.c.s.d.c.c.CartController - [queryHasStockCartsCount,219] - 查询用户购物车有库存商品数量
+09:12:06.169 [http-nio-8090-exec-3] INFO  c.c.s.d.c.c.CartController - [queryHasStockCartsCount,228] - 2
+09:12:06.828 [http-nio-8090-exec-6] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,44] - request.getHeader("Cookie") = JSESSIONID=3B894270AAD503CCBFAB2D3F91F9D349
+09:12:06.828 [http-nio-8090-exec-6] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,45] - request.getHeader("token") = 
+09:12:06.828 [http-nio-8090-exec-6] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,46] - accountMap = {}
+09:12:06.829 [http-nio-8090-exec-6] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,47] - 当前请求的接口 = /dzy/cart
+09:12:06.840 [http-nio-8090-exec-6] INFO  c.c.s.d.c.c.CartController - [queryCarts,168] - 100	1 查询购物车有库存
+09:12:09.90 [http-nio-8090-exec-8] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,44] - request.getHeader("Cookie") = JSESSIONID=3B894270AAD503CCBFAB2D3F91F9D349
+09:12:09.90 [http-nio-8090-exec-8] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,45] - request.getHeader("token") = 
+09:12:09.90 [http-nio-8090-exec-8] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,46] - accountMap = {}
+09:12:09.90 [http-nio-8090-exec-8] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,47] - 当前请求的接口 = /dzy/cart/checkout
+09:12:09.101 [http-nio-8090-exec-7] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,44] - request.getHeader("Cookie") = JSESSIONID=3B894270AAD503CCBFAB2D3F91F9D349
+09:12:09.101 [http-nio-8090-exec-7] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,45] - request.getHeader("token") = 
+09:12:09.101 [http-nio-8090-exec-7] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,46] - accountMap = {}
+09:12:09.101 [http-nio-8090-exec-7] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,47] - 当前请求的接口 = /dzy/addr
+09:12:09.238 [http-nio-8090-exec-7] INFO  c.c.s.d.c.a.AddrController - [getAddrByUserId,43] - 用户获取地址：null
+09:12:53.814 [http-nio-8090-exec-1] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,44] - request.getHeader("Cookie") = JSESSIONID=3B894270AAD503CCBFAB2D3F91F9D349
+09:12:53.814 [http-nio-8090-exec-1] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,45] - request.getHeader("token") = 
+09:12:53.815 [http-nio-8090-exec-1] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,46] - accountMap = {}
+09:12:53.815 [http-nio-8090-exec-1] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,47] - 当前请求的接口 = /dzy/cart
+09:12:53.884 [http-nio-8090-exec-1] INFO  c.c.s.d.c.c.CartController - [queryCarts,168] - 100	1 查询购物车有库存
+09:42:25.324 [http-nio-8090-exec-5] INFO  c.c.s.d.c.c.CartController - [queryHasStockCartsCount,219] - 查询用户购物车有库存商品数量
+09:42:25.501 [http-nio-8090-exec-6] INFO  c.c.s.d.c.b.BookController - [getIsSellBookSkuList,45] - name =  rate=0.0 pageSize = 3 pageNum =1
+09:42:25.501 [http-nio-8090-exec-6] INFO  c.c.s.d.c.b.BookController - [getIsSellBookSkuList,49] - 查询所有书籍单品信息
+09:42:29.161 [http-nio-8090-exec-8] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,44] - request.getHeader("Cookie") = JSESSIONID=505A9F83DA6DFEC90F2B2905733E39C2
+09:42:29.162 [http-nio-8090-exec-8] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,45] - request.getHeader("token") = 
+09:42:29.162 [http-nio-8090-exec-8] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,46] - accountMap = {}
+09:42:29.162 [http-nio-8090-exec-8] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,47] - 当前请求的接口 = /dzy/sell
+09:42:31.195 [http-nio-8090-exec-10] INFO  c.c.s.d.c.c.CartController - [queryHasStockCartsCount,219] - 查询用户购物车有库存商品数量
+09:42:31.219 [http-nio-8090-exec-1] INFO  c.c.s.d.c.b.BookController - [getIsSellBookSkuList,45] - name =  rate=0.0 pageSize = 3 pageNum =1
+09:42:31.220 [http-nio-8090-exec-1] INFO  c.c.s.d.c.b.BookController - [getIsSellBookSkuList,49] - 查询所有书籍单品信息
+10:24:09.644 [http-nio-8090-exec-10] INFO  c.c.s.d.c.c.CartController - [queryHasStockCartsCount,219] - 查询用户购物车有库存商品数量
+10:24:10.441 [http-nio-8090-exec-4] INFO  c.c.s.d.c.b.BookController - [getIsSellBookSkuList,45] - name =  rate=0.0 pageSize = 3 pageNum =1
+10:24:10.441 [http-nio-8090-exec-4] INFO  c.c.s.d.c.b.BookController - [getIsSellBookSkuList,49] - 查询所有书籍单品信息
+10:24:12.529 [http-nio-8090-exec-9] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,44] - request.getHeader("Cookie") = JSESSIONID=3CE4C1946014EEDAD1F968C76A4663D2
+10:24:12.529 [http-nio-8090-exec-9] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,45] - request.getHeader("token") = 
+10:24:12.530 [http-nio-8090-exec-9] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,46] - accountMap = {}
+10:24:12.530 [http-nio-8090-exec-9] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,47] - 当前请求的接口 = /dzy/cart
+10:24:12.533 [http-nio-8090-exec-1] INFO  c.c.s.d.c.ContronllerAdvice - [exception,44] - 拦截异常e = java.lang.NullPointerException
+10:24:12.535 [http-nio-8090-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - [logException,198] - Resolved [java.lang.NullPointerException]
+10:24:14.895 [http-nio-8090-exec-6] INFO  c.c.s.d.c.c.CartController - [queryHasStockCartsCount,219] - 查询用户购物车有库存商品数量
+10:24:14.948 [http-nio-8090-exec-10] INFO  c.c.s.d.c.b.BookController - [getIsSellBookSkuList,45] - name =  rate=0.0 pageSize = 3 pageNum =1
+10:24:14.948 [http-nio-8090-exec-10] INFO  c.c.s.d.c.b.BookController - [getIsSellBookSkuList,49] - 查询所有书籍单品信息
+10:28:31.47 [http-nio-8090-exec-8] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,44] - request.getHeader("Cookie") = JSESSIONID=3CE4C1946014EEDAD1F968C76A4663D2
+10:28:31.48 [http-nio-8090-exec-8] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,45] - request.getHeader("token") = 
+10:28:31.48 [http-nio-8090-exec-8] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,46] - accountMap = {}
+10:28:31.48 [http-nio-8090-exec-8] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,47] - 当前请求的接口 = /dzy/cart/checkout
+10:28:31.48 [http-nio-8090-exec-4] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,44] - request.getHeader("Cookie") = JSESSIONID=3CE4C1946014EEDAD1F968C76A4663D2
+10:28:31.49 [http-nio-8090-exec-4] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,45] - request.getHeader("token") = 
+10:28:31.49 [http-nio-8090-exec-4] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,46] - accountMap = {}
+10:28:31.49 [http-nio-8090-exec-4] INFO  c.c.s.d.c.LogCostInterceptor - [preHandle,47] - 当前请求的接口 = /dzy/addr
+10:28:31.74 [http-nio-8090-exec-9] INFO  c.c.s.d.c.ContronllerAdvice - [exception,44] - 拦截异常e = java.lang.NullPointerException
+10:28:31.76 [http-nio-8090-exec-9] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - [logException,198] - Resolved [java.lang.NullPointerException]
+10:28:31.906 [http-nio-8090-exec-1] INFO  c.c.s.d.c.ContronllerAdvice - [exception,44] - 拦截异常e = org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 2
+10:28:31.908 [http-nio-8090-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - [logException,198] - Resolved [org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 2]

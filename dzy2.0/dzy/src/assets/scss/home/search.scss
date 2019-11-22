@@ -1,0 +1,107 @@
+#under {
+    background: rgb(242, 242, 242);
+    /* background-color: F2F2F2; */
+    width: 100%;
+    height: 100%;
+
+    #Search_box {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        /* background:lavenderblush; */
+        background-color: white;
+        /* box-shadow: 0 0 4px rgba(0, 0, 0, .25); */
+        -webkit-animation: fadeInShadow .2s;
+        animation: fadeInShadow .2s;
+
+        #box {
+            position: relative;
+            padding: 15px 13px;
+
+            #SearchInput {
+                display: block;
+                box-sizing: border-box;
+                width: 100%;
+                font: inherit;
+                font-size: 14px;
+                line-height: 24px;
+                padding: 6px 16px;
+                background: rgb(242, 242, 242);
+                border: none;
+                border-radius: 999px;
+                outline: none;
+                color: gainsboro;
+                font-weight: 300;
+            }
+
+
+        }
+    }
+}
+
+#blank {
+    width: 100%;
+    height: 16px;
+    background: red;
+}
+
+#home {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 46px;
+    height: 46px;
+    position: fixed;
+    bottom: 180px;
+    right: 16px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px 0px;
+    border-radius: 50%;
+
+    background: rgba(102, 102, 102, 0.96);
+}
+
+
+#type {
+
+    /* background:lightcoral; */
+    background-color: white;
+    width: 100%;
+
+    /* height:300px; */
+    .attempt {
+        margin-bottom: 18px;
+        color: rgb(170, 170, 170);
+        font-size: 13px;
+        margin-left: 20px;
+        padding-top: 16px;
+        font-weight: 300;
+    }
+
+    #labels {
+        margin-left: 16px;
+        margin-top: -10px;
+
+        a{
+            text-decoration: none;
+        }
+
+        .label_desc {
+            display: inline-flex;
+            box-sizing: border-box;
+            height: 30px;
+            align-items: center;
+            margin: 5px;
+            padding: 0 9px;
+            color: rgb(102, 102, 102);
+            font-size: 15px;
+            border: 1px solid rgb(242, 242, 242);
+            border-radius: 5px;
+            font-weight: 300;
+        }
+    }
+
+}
