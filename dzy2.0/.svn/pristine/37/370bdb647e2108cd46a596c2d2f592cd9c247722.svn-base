@@ -1,0 +1,53 @@
+package cn.dzy.manage.boss.manage.controller;
+
+import cn.dzy.manage.boss.manage.bean.BizResponse;
+import cn.dzy.manage.boss.manage.bean.Fabulous;
+import cn.dzy.manage.boss.manage.bean.user.User;
+import cn.dzy.manage.boss.manage.dao.FabulousDao;
+import cn.dzy.manage.boss.manage.utils.TokenUtil;
+import org.apache.ibatis.annotations.Select;
+import org.springframework.web.bind.annotation.*;
+
+import javax.annotation.Resource;
+import java.util.List;
+
+@RestController
+@RequestMapping("/dzy/thumbsUp")
+public class FabulousController {
+    @Resource
+    FabulousDao dao;
+    //点赞
+    @PostMapping("/{detailedId}")
+    public BizResponse add(@PathVariable("detailedId") int bookCollectionDetailedId, @RequestHeader ("token")String token){
+        Integer userId = TokenUtil.getUserId(token);
+        dao.add(bookCollectionDetailedId,userId);
+        Fabulous fabulous = dao.getFabulousByUserIdAndDetailedId(bookCollectionDetailedId, userId);
+        return BizResponse.of(0,fabulous);
+    }
+//    @PostMapping("/{detailedId}/{userId}")
+//    public BizResponse add(@PathVariable("detailedId") int bookCollectionDetailedId, @PathVariable("userId") int userId){
+//        dao.add(bookCollectionDetailedId,userId);
+//        return BizResponse.of(0,null);
+//    }
+
+    //取消点赞
+    @DeleteMapping("/cancel/{id}")
+    public BizResponse del(@PathVariable("id") int id){
+        dao.delete(id);
+        return BizResponse.of(0,null);
+    }
+    //用户是否点赞了指定的书单详情
+    @GetMapping("/up/{detailedId}")
+    public BizResponse getFabulousByUserIdAndDetailedId(@RequestHeader ("token")String token,@PathVariable("detailedId") int detailedId){
+        Integer userId = TokenUtil.getUserId(token);
+        Fabulous fabulous = dao.getFabulousByUserIdAndDetailedId(userId, detailedId);
+        if (fabulous == null) return BizResponse.of(0,null);
+        return BizResponse.of(0,fabulous);
+    }
+    @GetMapping("/up")
+    public BizResponse getUp(@RequestParam("id") int id){
+        List<User> up = dao.getUp(id);
+        if (up == null) return  BizResponse.of(205,null);
+        return BizResponse.of(0,up);
+    }
+}

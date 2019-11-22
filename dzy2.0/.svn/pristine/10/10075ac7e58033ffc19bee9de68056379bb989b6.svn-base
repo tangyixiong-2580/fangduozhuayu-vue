@@ -1,0 +1,510 @@
+.sellingbooks {
+  .rules-top {
+    font-size: 14px;
+  }
+
+  .el-dialog__wrapper.input-wrapper {
+    padding: 0px;
+
+    .el-dialog.el-dialog--center {
+      width: 90%;
+
+      .el-dialog__body {
+        padding: 0px;
+        border-bottom: 0px;
+
+        .modal-desc {
+          .desc-context {
+            margin: 0px;
+
+            .context-center {
+              margin: 20px;
+              margin-bottom: 18px;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              font-size: 15px;
+            }
+
+            .context-end {
+              margin: 0px;
+            }
+
+            .input-wrapper {
+              padding: 0px 20px;
+              padding-top: 6px;
+              padding-bottom: 10px;
+
+              .input-isbn {
+                display: inline-block;
+                box-sizing: border-box;
+                width: 100%;
+                margin: 0;
+                padding: 9px;
+                font-size: 14px;
+                line-height: 20px;
+                font-size: 14px;
+                line-height: 20px;
+                background: rgb(247, 247, 247);
+                border: 1px solid rgb(247, 247, 247);
+                border-radius: 5px;
+                appearance: none;
+                outline: none;
+              }
+            }
+
+            .inputfales {
+              padding: 0px 20px;
+              font-weight: 300;
+              font-size: 12px;
+              line-height: 1.4;
+              color: rgb(242, 129, 129);
+            }
+          }
+        }
+      }
+
+      .el-dialog__footer {
+        padding: 5px;
+        height: 70px;
+
+        .commitIsbn {
+          width: 135px;
+          padding: 6px 0;
+          font-size: 15px;
+          line-height: 21px;
+          background-color: rgb(24, 195, 170);
+          color: white;
+          border-radius: 999px;
+          border: solid 1px rgb(24, 195, 170);
+        }
+      }
+    }
+
+  }
+
+  .el-dialog__wrapper.login-wrapper {
+    .el-dialog.el-dialog--center {
+      border-radius: 10px;
+
+      .el-dialog__header {
+        padding: 15px 0;
+      }
+
+      .el-dialog__body {
+        border-top: solid 1px rgb(242, 242, 242);
+        padding: 23px 23px 23px 23px;
+        margin: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        .twoDimensional {
+          margin-right: 0px;
+
+        }
+      }
+
+      .el-dialog__footer {
+        padding-top: 0px;
+      }
+    }
+  }
+
+  .el-dialog__wrapper.rules-wrapper {
+    color: rgb(51, 51, 51);
+    border-radius: 20px;
+
+    .el-dialog.el-dialog--center {
+      border-radius: 10px;
+
+      .el-dialog__body {
+        border-top: solid 1px rgb(242, 242, 242);
+        border-bottom: solid 1px rgb(242, 242, 242);
+        padding: 23px 23px 23px 23px;
+        font-size: 16px;
+
+        ul {
+          list-style: none;
+          padding: 0px;
+
+          li {
+
+            .content {
+              display: flex;
+              align-items: center;
+            }
+          }
+
+        }
+
+      }
+
+      .el-dialog__footer {
+        padding: 0px;
+        height: 54px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        span {
+          width: 100%;
+          height: 100%;
+
+          .choice {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+
+            div {
+              width: 100%;
+            }
+
+            .return {
+              width: 100%;
+              border-right: solid 1px rgb(247, 247, 247);
+
+              .return-text {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+              }
+            }
+          }
+        }
+
+        .check {
+          text-align: center;
+          color: rgb(24, 195, 170);
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          height: 100%;
+          text-decoration: none;
+        }
+
+      }
+    }
+
+    ul {
+      padding: 0px;
+
+      li {
+        .content {
+          .point {
+            height: 6px;
+            width: 6px;
+            background: rgb(24, 195, 170);
+            border-radius: 50%;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+
+    .rule {
+      font-weight: 100;
+      color: rgb(24, 195, 170);
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      svg {
+        width: 24px;
+      }
+    }
+  }
+
+}
+
+.notice {
+  display: flex;
+  background-color: rgba(242, 129, 129, 0.1);
+  color: rgb(242, 129, 129);
+  padding: 9.6px 18px;
+
+  .regulation {
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .update {
+    font-size: 14px;
+    font-weight: normal;
+  }
+
+  .Icon {
+    width: 1.4em;
+  }
+}
+
+.tosellbooks {
+  display: flex;
+  padding: 15px;
+  border-bottom: 1px solid rgb(247, 247, 247);
+
+  .particular {
+    margin-left: 15px;
+    width: 100%;
+
+    .book-name {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .title {
+        font-size: 12px;
+        font-weight: 400;
+        margin: 0px 24px 2px 0px;
+      }
+    }
+
+    .writer {
+      color: rgb(170, 170, 170);
+      font-size: 12px;
+    }
+
+    .condition {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: 100%;
+
+      .Icon {
+        width: 1.4em;
+      }
+
+      .conditionsas {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 1.83;
+        color: rgb(170, 170, 170);
+      }
+
+      .discounta {
+        box-sizing: border-box;
+        display: inline-flex;
+        align-items: center;
+        height: 18px;
+        padding: 0 6px;
+        color: rgb(214, 186, 140);
+        font-size: 12px;
+        font-weight: 400;
+        border: 0.5px solid rgb(214, 186, 140);
+        border-radius: 4px;
+        white-space: nowrap;
+        margin-left: 5px;
+      }
+    }
+
+  }
+}
+
+.nocharge {
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  padding: 12px;
+
+  .inform {
+    color: rgb(170, 170, 170);
+    margin-left: 8px;
+    font-size: 14px;
+  }
+}
+
+.boocover {
+  position: relative;
+  display: flex;
+  color: inherit;
+  font-size: 14px;
+  padding: 15px;
+  text-decoration: none;
+  border-bottom: 1px solid rgb(247, 247, 247);
+
+  .matter {
+    margin-left: 15px;
+    width: 100%;
+
+    .writer {
+      color: rgb(170, 170, 170);
+      font-size: 12px;
+    }
+
+    .feedback {
+      border-radius: 18px;
+      border: 1px solid #f1f1f1;
+      height: 26px;
+      padding: 0px 12px;
+      line-height: 26px;
+      color: rgb(102, 102, 102);
+      font-weight: 300;
+    }
+
+  }
+}
+
+.Fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+
+  .scanaQRcode {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 14px;
+
+    .scancode {
+      width: 130px;
+      height: 45px;
+      font-size: 16px;
+      border-radius: 22px;
+      border: 1px solid #f1f1f1;
+      background-color: #15c2aa;
+      color: #000;
+      box-shadow: 3px 4px 8px rgba(24, 195, 170, 0.5);
+
+      .sasdaf {
+        display: flex;
+        margin-top: 12px;
+        margin-left: 20px;
+
+        .SellPage-scanIcon {
+          width: 21px;
+        }
+
+        .qwss {
+          color: #ffffff;
+          margin-top: -0.5px;
+        }
+      }
+    }
+
+    .scancoq {
+      width: 130px;
+      height: 45px;
+      font-size: 16px;
+      border-radius: 22px;
+      border: 1px solid #f1f1f1;
+      background-color: #ffffff;
+      color: #000;
+      margin-left: 15px;
+      box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.08);
+
+      .sasdaf {
+        display: flex;
+        margin-top: 12px;
+        margin-left: 20px;
+
+        .SellPage-scanIcon {
+          width: 21px;
+        }
+
+        .qwsa {
+          /* color: #b5b5b5; */
+          color: rgb(102, 102, 102);
+          margin-left: 5px;
+        }
+      }
+
+    }
+
+
+  }
+
+  .payment {
+    display: flex;
+    background-color: rgb(247, 247, 247);
+    padding: 15px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+
+    .paymentsa {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      font-size: 13px;
+
+      .one {
+        padding-right: 0.25em;
+        margin-top: -2px;
+      }
+
+      .one2 {
+        padding-right: 0.25em;
+        color: rgb(170, 170, 170);
+        margin-top: -2px;
+      }
+
+      .asws {
+
+        font-size: 12px;
+        font-weight: 300;
+        color: rgb(170, 170, 170);
+
+        .section {
+          display: flex;
+          flex-direction: row;
+          -webkit-box-align: center;
+          align-items: center;
+          margin-top: 1.8px;
+          font-size: 12px;
+          font-weight: 300;
+          color: rgb(170, 170, 170);
+
+          .asa {
+            color: inherit;
+
+            .Icon {
+              width: 1.4em;
+            }
+          }
+
+        }
+      }
+    }
+
+    .nextstep {
+      background-color: rgb(24, 195, 170);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 100px;
+      height: 42px;
+      font-size: 18px;
+      color: #ffff;
+    }
+
+
+  }
+}
+
+.regulations {
+  padding: 18px 15px;
+  border-bottom: 1px solid rgb(247, 247, 247);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+  color: rgb(51, 51, 51);
+
+  .Icon {
+    width: 1.4em;
+  }
+}

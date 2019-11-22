@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.app {
+    height: 667px;
+    color: rebeccapurple;
+
+    .back {
+        height: 46px;
+        width: 46px;
+        border-radius: 50%;
+        background: rgba(102, 102, 102, 0.96);
+        position: fixed;
+        bottom: 66px;
+        right: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .books-order {
+        text-decoration: none;
+        background: #fff;
+
+        .books-order-coding {
+            display: flex;
+            line-height: 2;
+            font-weight: 400;
+            padding: 15px;
+            padding-bottom: 0px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+
+            .title {
+                color: rgb(51, 51, 51);
+                margin: 0px;
+                font: inherit;
+                font-weight: 400;
+                font-size: 15px;
+                overflow: hidden;
+            }
+
+            .cancel {
+                color: rgb(170, 170, 170);
+                font-size: 15px;
+            }
+        }
+
+        .meta {
+            color: rgb(170, 170, 170);
+            font-size: 12px;
+            display: flex;
+            -webkit-box-align: center;
+            align-items: center;
+            padding: 0px 15px;
+
+            .meta-text-wrap {
+                display: flex;
+                align-items: center;
+                margin-right: 8px;
+                font-weight: 300;
+
+                .meta-circle {
+                    width: 2px;
+                    height: 2px;
+                    background-color: rgb(170, 170, 170);
+                    margin: 0px 8px;
+                }
+            }
+
+            .meta-line {
+                height: 1px;
+                flex: 1 1 0%;
+                border-top: 0.5px solid rgb(242, 242, 242);
+            }
+        }
+
+        .photograph {
+            display: flex;
+            margin-top: 11px;
+            padding: 0px 15px 28px 15px;
+        }
+
+        .blank {
+            height: 15px;
+            background: rgb(242, 242, 242);
+            width: 100%;
+        }
+
+    }
+
+    .blank-two {
+        background: rgb(242, 242, 242);
+        height: 100%;
+        width: 100%;
+
+        .footer {
+            display: flex;
+            -webkit-box-pack: center;
+            justify-content: center;
+            color: rgb(102, 102, 102);
+            font-size: 14px;
+            line-height: 19px;
+            padding: 30px 0px;
+            height: 100%;
+            margin-top: 8px;
+
+            .root {
+                display: flex;
+                -webkit-box-align: center;
+                color: rgba(0, 0, 0, 0.1);
+
+                .line {
+                    width: 42px;
+                    margin-top: 9px;
+                    border-top: 0.5px solid currentcolor;
+                }
+
+                .diamond {
+                    width: 7.6px;
+                    height: 7.6px;
+                    margin: 7px 12px 0 40px;
+                    margin-left: 20px;
+                    background-color: rgba(0, 0, 0, 0.1);
+                    -moz-transform-origin: 0 100%;
+                    -o-transform-origin: 0 100%;
+                    -ms-transform-origin: 0 100%;
+                    transform-origin: 0 100%;
+                    -webkit-transform: rotate(-45deg);
+                    -moz-transform: rotate(-45deg);
+                    -o-transform: rotate(-45deg);
+                    -ms-transform: rotate(-45deg);
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+    }
+}

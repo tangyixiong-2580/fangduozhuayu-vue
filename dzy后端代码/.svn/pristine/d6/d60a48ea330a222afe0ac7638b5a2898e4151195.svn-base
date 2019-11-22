@@ -1,0 +1,77 @@
+package com.c1801.spring.dzy.service;
+
+import com.c1801.spring.dzy.common.ResData;
+import com.c1801.spring.dzy.mapper.OrderBookMapper;
+import com.c1801.spring.dzy.mapper.OrderMapper;
+import com.c1801.spring.dzy.mapper.SellBookMapper;
+import com.c1801.spring.dzy.model.Book;
+import com.c1801.spring.dzy.model.Cart;
+import com.c1801.spring.dzy.model.Order;
+import com.c1801.spring.dzy.model.OrderAccount;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+import org.springframework.web.bind.annotation.RequestBody;
+
+import java.util.ArrayList;
+import java.util.List;
+
+@Service
+@Transactional
+public class OrderService {
+
+    @Autowired
+    OrderMapper orderMapper;
+    @Autowired
+    SellBookMapper sellBookMapper;
+
+    @Autowired
+    private CartService cartService;
+
+    public ResData changeOrderStatus(Order order) {
+        Integer status = 0;
+        if (order.getStatus() >= 10) {
+            OrderAccount orderAccount = orderMapper.queryOrderAccountByOrderId(order.getId());
+            if (orderAccount.getStatus() >= 10) {
+                return ResData.ofSuccess(0, "当前订单不支持取消");
+            }
+            //获取订单所有书籍
+            List<Integer> bookId = new ArrayList<>();
+            for (Book b : orderAccount.getOrderBooksConditions()) {
+                bookId.add(b.getId());
+            }
+            //将卖书列表中的书籍从订单中删除
+            sellBookMapper.sellBookWhetherInOrder(orderAccount.getUserId(), bookId, 0);
+            status = orderMapper.cancelOrder(order.getId(), order.getStatus() + orderAccount.getStatus());
+        } else {
+            if (order.getStatus() > 4) {
+                return ResData.ofSuccess(0, "当前状态不支持修改");
+            }
+            status = orderMapper.cancelOrder(order.getId(), order.getStatus());
+        }
+        return ResData.of(0, "状态修改成功", order.getStatus());
+    }
+
+
+    //1.有使用券 则查询券是否可用
+    // 是否过期，是否超过门槛 券的类型是否正确，锁定券
+
+    //2.查询库存
+    //对比2结果
+    //3.修改购物车商品状态 和 扣库存
+    //对比3执行修改的结果数据条数和要修改的数据条数是否有异
+    //4.生成订单
+    @Transactional
+    public Order createOrder(List<Integer> cartIds, Integer userId){
+
+        //查询要生成订单商品中是在售有库存
+        List<Integer> carts = cartService.queryPurchaseCarts(cartIds, userId);
+
+        //查询出的购物车商品数量和要结算的商品相同 且 一样
+//        if(cartIds.size() == carts.size() && cartIds.containsAll(carts)){
+//
+//
+//        }
+        return null;
+    }
+}

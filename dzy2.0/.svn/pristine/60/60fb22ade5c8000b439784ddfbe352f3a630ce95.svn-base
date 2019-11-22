@@ -1,0 +1,85 @@
+#rootr {
+    background-color: #fff;
+
+    .header {
+        height: 50px;
+        width: 100%;
+        display: flex;
+        border-bottom: 1px solid #ccc;
+        background-color: #fff;
+        position: fixed;
+        top: 0;
+        font-weight: 100;
+        z-index: 100;
+
+        .header-buy {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .buy-bot {
+                height: 100%;
+                font-size: 16px;
+                font-weight: 400;
+                display: flex;
+                align-items: center;
+            }
+
+            .bottem {
+                border-bottom: 3px solid rgb(24, 195, 170);
+            }
+
+        }
+
+        .colors {
+            color: rgb(24, 195, 170)
+        }
+
+        .header-sell {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .sell-bot {
+                height: 100%;
+                /* border-bottom: 3px solid rgb(24, 195, 170); */
+                font-size: 16px;
+                font-weight: 400;
+                display: flex;
+                align-items: center;
+            }
+
+            .bottem {
+                border-bottom: 3px solid rgb(24, 195, 170);
+            }
+
+        }
+
+        .colors {
+            color: rgb(24, 195, 170)
+        }
+
+    }
+
+    .type {
+        width: 100%;
+        position: relative;
+        top: 51px;
+    }
+
+    #wrapper {
+        padding: 0 15px 0 15px;
+        height: 620px;
+        z-index: 1;
+        overflow: auto;
+
+        .Icon {
+            width: 1.4em;
+            margin-left: -5px;
+            margin-bottom: -4px;
+        }
+    }
+
+}
